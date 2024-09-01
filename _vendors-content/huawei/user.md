@@ -1,28 +1,28 @@
 ---
 manufacturer:
-    - huawei
+-华为
 
 ---
 
 
-### App Launch on some EMUI 8, 9 and 10 devices (Huawei P20, Huawei P20 Lite, Huawei Mate 10...)
+###在部分EMUI 8、9和10设备上发布App（华为P20、华为P20 Lite、华为Mate 10……）
 
-* *Phone settings > Battery > App launch* and then set your app to “Manage manually” and make sure everything is turned on.
+* *手机设置>电池>应用程序启动*然后将你的应用程序设置为“手动管理”，并确保一切都打开了。
 
-<div class="img-block">
-  <figure>
-    <img src="/assets/img/huawei/ss_huawei_app_launch_1.png">
-    <figcaption>1. *Phone settings > Battery > App launch*. This feature may or may not be available for all devices or labeled differently.</figcaption>
-  </figure>
+<级班级=“img-block”>
+<数字>
+<百万毫克学生代表会="/assets/img/huawei/ss_huawei_app_launch_1.png">
+<图>1。*手机设置>>应用程序*。此功能可能适用于所有设备，也可能不适用于所有设备。</图>
+</数字>
 
-  <figure>
-    <img src="/assets/img/huawei/ss_huawei_app_launch_3.png">
-    <figcaption>2. Turn off “Manage all automatically”</figcaption>
-  </figure>
+<数字>
+<百万毫克学生代表会="/assets/img/huawei/ss_huawei_app_launch_3.png">
+<图>2.关闭“自动管理”</图>
+</数字>
 
-  <figure>
-    <img src="/assets/img/huawei/ss_huawei_app_launch_4.png">
-    <figcaption>3. Make sure to ENABLE! all toggles.</figcaption>
+  <数字>
+    <百万毫克学生代表会="/assets/img/huawei/ss_huawei_app_launch_4.png">
+    <图>3。一定要启用！所有切换。</图>
   </figure>
 
 </div>
@@ -58,31 +58,31 @@ It is called <b>PowerGenie</b> and it kills all apps that are not on its whiteli
 
 
 
-Unfortunately this is a system app and can only be fully uninstalled using ADB (Android Debug Bridge) Source: [XDA](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
+不幸的是，这是一个系统应用程序，只能完全卸载使用ADB（Android Debug Bridge）源代码：[XDA](https://forum.xda-developers.com/mate-20-pro/themes/remove-powergenie-to-allow-background-t3890409).
 
 
-You need to:
+你需要：
 
 
-1. [install ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) on your computer
+1. [安装ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/)在你的电脑上
 
 
-2. Connect your phone with a data cable
+2.用数据线连接手机
 
 
-3. Enable [Developer options](https://developer.android.com/studio/debug/dev-options.html)
+3.使能够[开发人员选项](https://developer.android.com/studio/debug/dev-options.html)
 
 
-4. Enable USB debugging within Developer options on your device
+4.在设备上的开发人员选项中启用USB调试
 
 
-5. Run the following commands on your computer:
+5.在计算机上运行下列命令：
 
-`adb shell pm uninstall -k --user 0 com.huawei.powergenie`
+`adb shell pm卸载-k-user 0 com. huawei. powergenie`
 
-`adb shell pm uninstall -k --user 0 com.huawei.android.hwaps`
+`adb shell pm卸载-k-user 0 com. huawei. android. hwaps`
 
-If apps keep getting killed try running `adb shell am stopservice hwPfwService`.
+如果应用程序不断被杀死尝试运行`adb壳牌am stopservice`.
 
 We did not yet have this confirmed but it is possible you can alternatively just disable PowerGenie in *Phone settings > Apps*. This setting would need to be re-applied every time you reboot your device.
 
